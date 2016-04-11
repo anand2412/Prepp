@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.prepp.customviews.CustomTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/violet"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="@string/sign_up_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text"
+        app:fontName="@string/roboto_bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_signup"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <com.prepp.customviews.CustomEditText
+            android:id="@+id/edt_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal|bottom"
+            android:hint="Your Name"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/blue_black"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/large_text"
+            app:fontName="@string/roboto_regular" />
+
+
+
+
+        <com.prepp.customviews.CustomEditText
+            android:id="@+id/edt_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal|bottom"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/blue_black"
+            android:hint="Email"
+            android:textSize="@dimen/large_text"
+            app:fontName="@string/roboto_regular" />
+
+     <!--   <com.prepp.customviews.CustomEditText
+            android:id="@+id/edt_txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="15dp"
+            android:gravity="center_horizontal|bottom"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/blue_black"
+            android:password="true"
+            android:textSize="@dimen/large_text"
+            app:fontName="@string/roboto_regular" />-->
+
+    </LinearLayout>
+
+
+    <com.prepp.customviews.CustomButton
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sign_button_bg"
+        android:padding="16dp"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text" />
+
+</RelativeLayout>

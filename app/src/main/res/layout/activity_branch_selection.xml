@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.prepp.activity.BranchSelectionActivity">
+
+    <LinearLayout
+        android:id="@+id/lyt_header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/violet"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <com.prepp.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:fontName="@string/roboto_bold"
+            android:textSize="@dimen/very_large_text"
+            android:text="@string/select_branch_title"/>
+
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ListView
+        android:id="@+id/lv_branch"
+        android:layout_below="@+id/lyt_header"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_above="@+id/btn_continue"
+        android:layout_marginRight="25dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+    <com.prepp.customviews.CustomButton
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:fontName="@string/roboto_bold"
+        android:padding="18dp"
+        android:textSize="@dimen/large_text"
+        android:text="@string/select_continue"
+        android:background="@color/sign_button_bg"/>
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">PREPP</string>
+
+    <string name="facebook_app_id">976173025787801</string>
+
+    <string name="no_internet_connection">Your internet connection appears to be offline.</string>
+    <string name="msg_401">The email or password you entered is incorrect</string>
+    <string name="msg_404">An unknown error occurred. Please try again later.</string>
+    <string name="msg_4xx">An unknown error occurred. Please try again later.</string>
+    <string name="msg_5xx">An unknown error occurred. Please try again later.</string>
+    <string name="unknow_error_kind">An unknown error occurred. Please try again later.</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_intro_first">IntroFirstActivity</string>
+    <string name="intro_screen_msg">Prepare yourself with handpicked\nquestions from the most reputed and\nexperienced faculties.</string>
+    <string name="lets_get_started">LETS GET STARTED</string>
+    <string name="sign_in_text">Already a member? SignIn</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="daily_preparation">Daily Preparation</string>
+    <string name="green_screen_msg">Solve 6 questions daily from Aptitude and your\nselected subject with your performance, answers\nexplanations for the questions.</string>
+
+
+    <!--Fonts-->
+    <string name="roboto_regular">Roboto-Regular.ttf</string>
+    <string name="roboto_bold">Roboto-Bold.ttf</string>
+    <string name="live_exam_prep">Live Exam Preparation</string>
+    <string name="yellow_screen_msg">You get 2 minutes to solve each question.\nIf the question is not answered in the given time,\nit is awarded zero points. In case of wrong answer a negative half point (-0.5) is deducted</string>
+    <string name="reward_prizes">Rewards and Prizes</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="create_account">CREATE AN ACCOUNT</string>
+    <string name="start_daily_quiz">and start your daily quiz</string>
+    <string name="login_facebook">Connect with Facebook</string>
+    <string name="login_google">Connect with Google</string>
+    <string name="signup_email">Connect with Email</string>
+    <string name="sign_up_title">USER REGISTRATION</string>
+    <string name="signup">CONTINUE</string>
+    <string name="title_activity_branch_selection">BranchSelectionActivity</string>
+    <string name="select_branch_title">Select your branch</string>
+    <string name="branch_edit_text_hint">Search for your branch</string>
+    <string name="select_continue"><![CDATA[SELECT & CONTINUE]]></string>
+    <string name="err_msg">Something went wrong, please try again!</string>
+    <string name="no_internet">Your internet appears to be offline</string>
+    <string name="verification_mail_msg">Verification mail sent successfully, please check your mail</string>
+    <string name="browse_title"><![CDATA[Videos by Your Company]]></string>
+    <string name="related_movies">Related Videos</string>
+    <string name="vertical_grid_title"><![CDATA[Vertical Video Grid]]></string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="init_text">00:00</string>
+    <string name="play_pause_description">Play Pause Button</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="no_video_found">No video was found</string>
+    <string name="about_app">About DemoCast Player</string>
+    <string name="version">Version: %1$s</string>
+    <string name="popular_header">Popular Videos</string>
+    <string name="preferences">PREFERENCES</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+    <string name="should_start">shouldStart</string>
+    <string name="start_position">startPosition</string>
+    <string name="search_results">Search Results</string>
+
+    <string-array name="quotes">
+        <item>You have to dream before your dreams can come true</item>
+        <item>Excellence is a continuous process and not an accident</item>
+        <item>All Birds find shelter during a rain.But Eagle avoids rain by flying above the Clouds</item>
+        <item>Problems are common, but attitude makes the difference!!</item>
+        <item>Dream is not that which you see while sleeping it is something that does not let you sleep.</item>
+        <item>Great dreams of great dreamers are always transcended.</item>
+        <item>Man needs his difficulties because they are necessary to enjoy success.</item>
+        <item>You have to dream before your dreams can come true.</item>
+    </string-array>
+
+    <!-- Error messages -->
+    <string name="video_error_media_load_timeout">Media loading timed out</string>
+    <string name="video_error_server_inaccessible">Media server was not reachable</string>
+    <string name="video_error_unknown_error">Failed to load video</string>
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="oops">Oops</string>
+    <string name="title_activity_user_dashboard">UserDashboardActivity</string>
+    <string name="dont_take">\"Don\'t take rest after\"</string>
+    <string name="validation_mail">Please enter correct email</string>
+    <string name="validation_empty_name">Please enter your name</string>
+    <string name="validation_empty_email">Please enter your email</string>
+    <string name="validation_empty_password">Please enter password</string>
+    <string name="start_quiz">START QUIZ</string>
+    <string name="account_verify_msg">Please enter code and verify your account</string>
+    <string name="submit">SUBMIT</string>
+    <string name="wait_until">Wait until\u00A0</string>
+    <string name="for_next_text">\u00A0for your next quiz</string>
+    <string name="till_then">Till then</string>
+    <string name="help_us">Rate us</string>
+    <string name="spred_word">to provide you more</string>
+    <string name="quiz_ready_msg">You quiz is ready. Touch to start your quiz</string>
+    <string name="tab_first_title">DAILY QUIZ</string>
+    <string name="tab_sec_title">TODAY\'S Result</string>
+    <string name="tab_third_title">TOP 10</string>
+    <string name="title_activity_question">QuestionActivity</string>
+    <string name="today_quiz">TODAY\'S QUIZ</string>
+    <string name="select_answer">Select your answer</string>
+    <string name="answer_title">Which of the above assumptions are correct ?</string>
+    <string name="sucess_message">Successfully Submitted</string>
+    <string name="taking_next">Taking you to next question in</string>
+    <string name="view_results">VIEW RESULTS</string>
+    <string name="performer_text">The top 10 performers will receive</string>
+    <string name="kalam_reward">KALAM REWARDS</string>
+    <string name="each_month">each month.</string>
+    <string name="today_result_title">Your Result for Today</string>
+    <string name="point_score">Points Scored</string>
+    <string name="incorrect_answer">Incorrect Answers</string>
+    <string name="correct_answer">Correct Answers</string>
+    <string name="question_answered">Question Answered</string>
+    <string name="correct_answer_explanation">Correct Answers and Explanations</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="select_brach_alert">Please select branch first</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="enter_verification_code_alert">Please enter verification code</string>
+    <string name="quiz_today_ready">, Your quiz for today is ready</string>
+    <string name="dialog_no_answer">Are you sure you want to continue without answering question?</string>
+    <string name="title_activity_finsih_quiz">FinsihQuizActivity</string>
+    <string name="title_activity_explaination">ExplainationActivity</string>
+    <string name="invalid_number">Invalid mobile number</string>
+    <string name="next">NEXT</string>
+
+</resources>

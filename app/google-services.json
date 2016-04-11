@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_id": "prepp-38518",
+    "project_number": "524045720955",
+    "name": "Prepp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524045720955:android:b4a6c67b72044107",
+        "client_id": "android:com.prepp",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.prepp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524045720955-2fr5plhmjtmbn79g8c8ocb0nekusrbkj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prepp",
+            "certificate_hash": "2C8C61AE2B66A26B0BC6268F47194E297B60E7AF"
+          }
+        },
+        {
+          "client_id": "524045720955-mictggo96ldrm0686lme14lvdoi8olsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

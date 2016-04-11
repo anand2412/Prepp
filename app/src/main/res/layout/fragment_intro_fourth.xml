@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_upper_part"
+    android:background="@drawable/blue_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_progress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/progress_circles_fourth"
+        android:visibility="invisible"
+        android:layout_marginBottom="50dp"/>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_image_fourth"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/img_progress_circle"/>
+
+    <TextView
+        android:id="@+id/tv_psu"
+        android:layout_above="@+id/tv_center_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/psu_text"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reward_prizes"/>
+
+    <TextView
+        android:id="@+id/tv_center_msg"
+        android:layout_above="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_text"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Based on your daily performance, your results are\ncalculated cumulatively and the top 10 performers\n will receive KALAM REWARDS-an intiative by\nNAME OF SPONSER"/>
+
+
+
+</RelativeLayout>

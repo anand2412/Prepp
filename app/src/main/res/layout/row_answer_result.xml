@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icn_cut_circle"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icn_arrow" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <com.prepp.customviews.CustomTextView
+                android:id="@+id/tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Question 1"
+                android:textColor="@color/blue_black"
+                android:textSize="@dimen/normal_text"
+                app:fontName="@string/roboto_bold" />
+
+
+            <com.prepp.customviews.CustomTextView
+                android:id="@+id/tv_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="+1 pt."
+                android:textColor="@color/blue_black"
+                android:textSize="@dimen/normal_text"
+                app:fontName="@string/roboto_regular" />
+
+            <com.prepp.customviews.CustomTextView
+                android:id="@+id/tv_answer_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_points"
+                android:text="Answered Correctly"
+                android:textColor="@color/green"
+                android:textSize="@dimen/normal_text"
+                app:fontName="@string/roboto_regular" />
+
+
+            <com.prepp.customviews.CustomTextView
+                android:id="@+id/tv_correct_answer_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_question"
+                android:layout_marginTop="10dp"
+                android:text="Correct Answer"
+                android:textColor="@color/blue_black"
+                android:textSize="@dimen/normal_text"
+                app:fontName="@string/roboto_regular" />
+
+
+            <com.prepp.customviews.CustomTextView
+                android:id="@+id/tv_correct_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_correct_answer_heading"
+                android:layout_marginTop="2dp"
+                android:text="b) Both b and c"
+                android:textColor="@color/blue_black"
+                android:textSize="@dimen/normal_text"
+                app:fontName="@string/roboto_regular" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_grey" />
+</RelativeLayout>

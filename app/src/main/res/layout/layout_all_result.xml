@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_border"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <com.prepp.customviews.CustomTextView
+                android:id="@+id/txt_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:background="@color/colorPrimary"
+                android:padding="15dp"
+                android:text="ALL TIME TOP 10 RANKS"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text"
+                app:fontname="@string/roboto_regular" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+            <ListView
+                android:id="@+id/lv_name_list"
+                android:layout_below="@+id/txt_header"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_header"
+                android:layout_marginRight="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_top_all_time" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="0dp"
+        android:layout_marginTop="15dp"
+        card_view:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_border"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <com.prepp.customviews.CustomTextView
+                android:id="@+id/txt_monthly_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:background="@color/colorPrimary"
+                android:padding="15dp"
+                android:text="TOP 10 RANKS - January 2016"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text"
+                app:fontname="@string/roboto_regular" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+            <ListView
+                android:id="@+id/lv_monthly_name_list"
+                android:layout_below="@+id/txt_monthly_header"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_monthly_header"
+                android:layout_marginRight="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_top_monthly" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

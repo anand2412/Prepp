@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/nested_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        xmlns:app="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lyt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_got_it"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fitsSystemWindows="true"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_bg_got_it_card" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.prepp.customviews.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/performer_text"
+                            android:textColor="@color/search"
+                            android:textSize="@dimen/large_text"
+                            app:fontname="@string/roboto_regular" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <com.prepp.customviews.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|left"
+                                android:text="@string/kalam_reward"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/large_text"
+                                app:fontname="@string/roboto_bold" />
+
+                            <com.prepp.customviews.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|left"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/each_month"
+                                android:textColor="@color/search"
+                                android:textSize="@dimen/normal_text"
+                                app:fontname="@string/roboto_regular" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <com.prepp.customviews.CustomTextView
+                        android:id="@+id/txt_got_it"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="10dp"
+                        android:text="GOT IT"
+                        android:textColor="@color/sign_button_bg"
+                        android:textSize="20sp"
+                        app:fontname="@string/roboto_bold" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <com.prepp.customviews.CustomTextView
+                android:id="@+id/txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue_black"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="50dp"
+                app:fontname="@string/roboto_regular"
+                android:text="Play Quiz first to see your result"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_scores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_border"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical">
+
+                    <com.prepp.customviews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:background="@color/colorPrimary"
+                        android:padding="15dp"
+                        android:text="@string/today_result_title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text"
+                        app:fontname="@string/roboto_regular" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_bg_result_card" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3"
+                                android:orientation="horizontal">
+
+                                <com.prepp.customviews.CustomTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="@string/question_answered"
+                                    android:textColor="@color/blue_black"
+                                    android:textSize="@dimen/large_text"
+                                    app:fontname="@string/roboto_regular" />
+
+                                <com.prepp.customviews.CustomTextView
+                                    android:id="@+id/txt_ques_ansd_value"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="right"
+                                    android:gravity="right"
+                                    android:text="4"
+                                    android:textColor="@color/blue_black"
+                                    android:textSize="@dimen/large_text"
+                                    app:fontname="@string/roboto_regular" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3"
+                                android:layout_marginTop="20dp"
+                                android:orientation="horizontal">
+
+                                <com.prepp.customviews.CustomTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="@string/correct_answer"
+                                    android:textColor="@color/blue_black"
+                                    android:textSize="@dimen/large_text"
+                                    app:fontname="@string/roboto_regular" />
+
+                                <com.prepp.customviews.CustomTextView
+                                    android:id="@+id/txt_corr_answd_value"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="right"
+                                    android:gravity="right"
+                                    android:text="4"
+                                    android:textColor="@color/blue_black"
+                                    android:textSize="@dimen/large_text"
+                                    app:fontname="@string/roboto_regular" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3"
+                                android:layout_marginTop="20dp"
+                                android:orientation="horizontal">
+
+                                <com.prepp.customviews.CustomTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:text="@string/incorrect_answer"
+                                    android:textColor="@color/blue_black"
+                                    android:textSize="@dimen/large_text"
+                                    app:fontname="@string/roboto_regular" />
+
+                                <com.prepp.customviews.CustomTextView
+                                    android:id="@+id/txt_incrr_ansd_value"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="right"
+                                    android:gravity="right"
+                                    android:text="4"
+                                    android:textColor="@color/blue_black"
+                                    android:textSize="@dimen/large_text"
+                                    app:fontname="@string/roboto_regular" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:padding="20dp"
+                        android:background="@color/dull_gray"
+                        android:orientation="horizontal">
+
+                        <com.prepp.customviews.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:text="@string/point_score"
+                            android:textColor="@color/sign_button_bg"
+                            android:textSize="@dimen/large_text"
+                            app:fontname="@string/roboto_regular" />
+
+                        <com.prepp.customviews.CustomTextView
+                            android:id="@+id/txt_point_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="4.5/6"
+                            android:textColor="@color/sign_button_bg"
+                            android:textSize="@dimen/large_text"
+                            app:fontname="@string/roboto_regular" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_border"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical">
+
+                    <com.prepp.customviews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:background="@color/colorPrimary"
+                        android:padding="15dp"
+                        android:text="@string/correct_answer_explanation"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text"
+                        app:fontname="@string/roboto_regular" />
+
+                    <LinearLayout
+                        android:id="@+id/lyt_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</android.support.v4.widget.NestedScrollView>
